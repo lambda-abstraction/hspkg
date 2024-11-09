@@ -1,0 +1,14 @@
+[project]
+name = "hspkg"
+version = "0.1.0"
+description = "A sample Python package that builds and uses a c extension that is backed up by a haskell package"
+readme = "readme.md"
+requires-python = ">=3.8"
+keywords = ["sample", "setuptools", "haskell", "c extension"]
+classifiers = [
+  "Intended Audience :: Developers",
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"

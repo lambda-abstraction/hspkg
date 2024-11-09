@@ -1,0 +1,12 @@
+# Cabal build directory
+dist-newstyle/
+
+# Basically, a directory to throw build stuff like shared libraries into
+artifact/
+
+# Python package build directory
+build/
+*.egg-info/
+
+# Python cached bytecode files 
+__pycache__/

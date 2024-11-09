@@ -1,0 +1,17 @@
+cabal-version: 3.0
+
+name: hs
+version: 0.1.0.0
+
+foreign-library hs
+    type: native-shared
+    options: standalone
+    other-modules:  HsLib
+
+    build-depends: base ^>=4.20.0.0
+
+    ghc-options: -dynamic -shared -fPIC -flink-rts -O3
+    hs-source-dirs: src
+    c-sources: src/cbits.c
+
+    default-language: GHC2021
